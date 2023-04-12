@@ -1,0 +1,20 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, size TEXT, price INTEGER);
+
+INSERT INTO clothing VALUES (1, "shirts", 5, "lrg", 10);
+INSERT INTO clothing VALUES (2, "leggings", 3, "med", 15);
+INSERT INTO clothing VALUES (3, "socks", 10, "sm", 3);
+INSERT INTO clothing VALUES (4, "bras", 5, "lrg", 20);
+INSERT INTO clothing VALUES (5, "shorts", 10, "med", 15);
+INSERT INTO clothing VALUES (6, "skirts", 7, "med", 15);
+INSERT INTO clothing VALUES (7, "jackets", 4, "lrg", 30);
+INSERT INTO clothing VALUES (8, "sneakers", 10, "lrg", 25);
+INSERT INTO clothing VALUES (9, "boots", 9, "med", 35);
+INSERT INTO clothing VALUES (10, "tanktops", 10, "sm", 5);
+INSERT INTO clothing VALUES (11, "sweat_pants", 5, "lrg", 20);
+INSERT INTO clothing VALUES (12, "polos", 10, "sm", 10);
+INSERT INTO clothing VALUES (13, "dresses", 4, "med", 25);
+INSERT INTO clothing VALUES (14, "tights", 10, "sm", 7);
+INSERT INTO clothing VALUES (15, "boxers", 12, "lrg", 8);
+
+SELECT * FROM clothing ORDER BY price;
+SELECT size, quantity FROM clothing GROUP BY size;
